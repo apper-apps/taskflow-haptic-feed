@@ -1,0 +1,112 @@
+[
+  {
+    "Id": 1,
+    "title": "Review quarterly budget proposal",
+    "description": "Analyze Q4 budget allocations and provide feedback on marketing spend",
+    "category": "Work",
+    "priority": "high",
+    "dueDate": "2024-01-15T09:00:00.000Z",
+    "completed": false,
+    "completedAt": null,
+    "createdAt": "2024-01-10T08:30:00.000Z"
+  },
+  {
+    "Id": 2,
+    "title": "Schedule dentist appointment",
+    "description": "Annual cleaning and checkup - call Dr. Smith's office",
+    "category": "Personal",
+    "priority": "medium",
+    "dueDate": "2024-01-12T14:00:00.000Z",
+    "completed": false,
+    "completedAt": null,
+    "createdAt": "2024-01-08T10:15:00.000Z"
+  },
+  {
+    "Id": 3,
+    "title": "Update project documentation",
+    "description": "Add new API endpoints and update deployment guide",
+    "category": "Work",
+    "priority": "medium",
+    "dueDate": "2024-01-18T17:00:00.000Z",
+    "completed": false,
+    "completedAt": null,
+    "createdAt": "2024-01-09T11:45:00.000Z"
+  },
+  {
+    "Id": 4,
+    "title": "Buy groceries for dinner party",
+    "description": "Get ingredients for pasta, salad, and dessert for Saturday's dinner",
+    "category": "Personal",
+    "priority": "high",
+    "dueDate": "2024-01-13T16:00:00.000Z",
+    "completed": false,
+    "completedAt": null,
+    "createdAt": "2024-01-11T07:20:00.000Z"
+  },
+  {
+    "Id": 5,
+    "title": "Complete React training course",
+    "description": "Finish modules 8-12 of advanced React patterns course",
+    "category": "Learning",
+    "priority": "medium",
+    "dueDate": "2024-01-20T23:59:00.000Z",
+    "completed": false,
+    "completedAt": null,
+    "createdAt": "2024-01-05T13:10:00.000Z"
+  },
+  {
+    "Id": 6,
+    "title": "Morning workout routine",
+    "description": "45-minute strength training session focusing on upper body",
+    "category": "Health",
+    "priority": "low",
+    "dueDate": "2024-01-12T07:00:00.000Z",
+    "completed": true,
+    "completedAt": "2024-01-12T07:45:00.000Z",
+    "createdAt": "2024-01-11T21:30:00.000Z"
+  },
+  {
+    "Id": 7,
+    "title": "Prepare presentation slides",
+    "description": "Create slides for client meeting about new product features",
+    "category": "Work",
+    "priority": "high",
+    "dueDate": "2024-01-16T10:00:00.000Z",
+    "completed": false,
+    "completedAt": null,
+    "createdAt": "2024-01-10T16:20:00.000Z"
+  },
+  {
+    "Id": 8,
+    "title": "Read '7 Habits' chapter 3",
+    "description": "Continue reading personal development book - chapter on time management",
+    "category": "Learning",
+    "priority": "low",
+    "dueDate": "2024-01-19T21:00:00.000Z",
+    "completed": false,
+    "completedAt": null,
+    "createdAt": "2024-01-09T19:45:00.000Z"
+  },
+  {
+    "Id": 9,
+    "title": "Plan weekend hiking trip",
+    "description": "Research trails, check weather, and pack gear for Saturday hike",
+    "category": "Personal",
+    "priority": "low",
+    "dueDate": "2024-01-14T18:00:00.000Z",
+    "completed": false,
+    "completedAt": null,
+    "createdAt": "2024-01-08T14:30:00.000Z"
+  },
+  {
+    "Id": 10,
+    "title": "Team standup meeting",
+    "description": "Daily sync with development team - sprint progress review",
+    "category": "Work",
+    "priority": "medium",
+    "dueDate": "2024-01-12T09:30:00.000Z",
+    "completed": true,
+    "completedAt": "2024-01-12T09:45:00.000Z",
+    "createdAt": "2024-01-11T17:00:00.000Z"
+  }
+]
