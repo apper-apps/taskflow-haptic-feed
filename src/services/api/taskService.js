@@ -16,24 +16,31 @@ export const taskService = {
     return task ? { ...task } : null;
   },
 
-  async create(taskData) {
+async create(taskData) {
     await delay();
     const newTask = {
       Id: Math.max(...tasks.map(t => t.Id), 0) + 1,
       ...taskData,
       completed: false,
       completedAt: null,
-      createdAt: new Date().toISOString()
+      createdAt: new Date().toISOString(),
+      timeEntries: taskData.timeEntries || [],
+      totalTimeSpent: taskData.totalTimeSpent || 0
     };
     tasks.push(newTask);
     return { ...newTask };
   },
 
-  async update(id, taskData) {
+async update(id, taskData) {
     await delay();
     const index = tasks.findIndex(t => t.Id === parseInt(id));
     if (index !== -1) {
-      tasks[index] = { ...tasks[index], ...taskData };
+      tasks[index] = { 
+        ...tasks[index], 
+        ...taskData,
+        timeEntries: taskData.timeEntries || tasks[index].timeEntries || [],
+        totalTimeSpent: taskData.totalTimeSpent || tasks[index].totalTimeSpent || 0
+      };
       return { ...tasks[index] };
     }
     return null;

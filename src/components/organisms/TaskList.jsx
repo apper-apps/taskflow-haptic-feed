@@ -120,14 +120,20 @@ const TaskList = ({
     setEditingTask(task);
   };
 
-  const handleSaveTask = async (taskId, taskData) => {
+const handleSaveTask = async (taskId, taskData) => {
     try {
       const updatedTask = await taskService.update(taskId, taskData);
       if (updatedTask) {
         setTasks(prev => prev.map(task => 
           task.Id === taskId ? updatedTask : task
         ));
-        toast.success("Task updated successfully");
+        
+        // Show specific success message for time tracking updates
+        if (taskData.timeEntries && taskData.timeEntries.length > 0) {
+          toast.success("Task and time tracking updated successfully");
+        } else {
+          toast.success("Task updated successfully");
+        }
         
         if (onTaskUpdate) {
           onTaskUpdate();
@@ -202,7 +208,7 @@ const TaskList = ({
         ))}
       </AnimatePresence>
 
-      <TaskEditModal
+<TaskEditModal
         task={editingTask}
         isOpen={!!editingTask}
         onClose={() => setEditingTask(null)}
